@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+body{
+    font-family: 'Silkscreen', cursive;
+    background-color: #000000;
+}
+element.style {
+    height: 100vh;
+}
+
+.titulo{
+   
+    font-family: 'Nabla', cursive;
+    font-size: 50px;
+    color: white;
+    width: 265px;
+    height: 61px;
+    margin-left: 46px;
+}
+
+.subtitulo{   
+    font-family: 'Nabla', cursive;
+    font-size: 30px;
+    color: white;
+    width: 265px;
+    height: 61px;
+   
+}
+
+#seleccionar-mascota{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tarjeta-mokepon{
+    background-color: #3F0071;
+    color: white;
+    width: 180px;
+    height: 80px;
+    box-sizing: border-box;
+    margin: 7px;
+    border: 3px solid #150050;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.tarjeta1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tarjeta1 img{
+    width: 50px;
+    
+}
+
+.tarjeta2{
+   
+    display: flex;
+}
+.tarjeta2 img {
+    width: 50px;
+}
+
+h2{
+    color: white;
+    width: 269px;
+    height: 34px;
+    border-radius: 5px;
+    padding-left: 27px;
+}
+input{
+    display: none;
+}
+
+input:checked +label{
+    background-color: #150050;
+}
+
+.seleccionar{
+    font-family: 'Silkscreen', cursive;
+    background-color:#FB2576;
+    color: white;
+    border: 3px solid #3F0071;
+    border-radius: 15px;
+}
+
+.capipepo{
+    margin: 20px 0px 0px 0px;
+}
+
+.pydos{
+    width: 80px;
+}
+
+#seleccionar-ataque{
+    flex-direction:column;
+    align-items: center;
+ 
+}
+
+.boton-ataques{
+
+
+    font-family: 'Silkscreen', cursive;
+    color: white;
+    background-color: #3F0071;
+    margin: 10px 0px 0px 0px;
+    width: 100px;
+    border-radius: 10px;
+    height: 50px;
+    
+    
+}
+
+.mascota1{
+    background-color: #3F0071;
+    margin: 15px;
+    padding: 15px;
+    width: 210px;
+    border: 3px solid;
+    border-radius: 5px;
+}
+
+.mascota2{
+    background-color: #3F0071;
+    margin: 15px;
+    padding: 15px;
+    width: 210px;
+    border: 3px solid;
+    border-radius: 5px;
+}
+
+.final{
+    font-family: 'Silkscreen', cursive;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#mensajes{
+    margin: 20px;
+}
+
+#boton-reiniciar{
+    font-family: 'Silkscreen', cursive;
+    color: white;
+    background-color: #3F0071;
+    margin: 0px 0px 0px 0px;
+    width: 88px;
+    border-radius: 10px;
+}
+
+#vida-jugador{
+    color: red;
+}
+
+#ataque-jugador{
+    color:red;
+}
+
+#ataque-enemigo{
+    color:red;
+}
+
+
+#vida-enemigo{
+    color: red;
+}
+
+#mascota-jugador{
+    color: red;
+}
+#mascota-enemigo{
+color: red;
+}
+
+.caja{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3F0071;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 15px;
+    width: 300px;
+    height: 100px;
+    
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-content: space-around;
+}
+    
+ 
+
+
+.enemigo{
+    background-color: #3F0071;
+    width: 140px;
+    border: 2px solid white;
+}
+
+.jugador{
+    background-color: #3F0071;
+    width: 140px;
+    border: 2px solid white;
+    margin-left: -44px;
+}
+
+.ataquesss{
+    display: flex;
+    flex-direction: row;
+}
+
+#ver-mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nabla', cursive;
+    font-size: 50px;
+    color: white;
+    
+}
+
+#ver-mapa button{
+    font-family: 'Silkscreen', cursive;
+    color: white;
+    background-color: #3F0071;
+    margin: 5px 0px 0px 0px;
+    width: 90px;
+    border-radius: 10px;
+    height: 50px;
+}
+
+ @media( max-width: 550px){
+    .tarjeta1{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .tarjeta2{
+    flex-direction: column;
+    }
+
+    .ataquesss{
+        flex-direction: column;
+    }
+
+    .caja{
+        width: 220px;
+    }
+
+    #seleccionar-ataque{
+        font-size: 14px;
+    }
+} 
+ 
+
+@media( max-width: 320px){
+  #ver-mapa div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+} 
+ 
